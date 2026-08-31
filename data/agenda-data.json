@@ -1,0 +1,306 @@
+[
+  {
+    "id": 4101,
+    "name": "Saturday, October 17",
+    "session_date": "2026-10-17",
+    "session_day": "Saturday",
+    "session_type_id": 12,
+    "session_type": "Main Program",
+    "session_category": "Opening Forum",
+    "session_category_id": 201,
+    "specialty_ids": [
+      3,
+      7
+    ],
+    "specialties": [
+      "Web Engineering",
+      "Interface Systems"
+    ],
+    "location_id": 31,
+    "location": "Hall A",
+    "venue": "North Harbor Conference Center",
+    "accreditation": "Professional Development",
+    "moderator": {
+      "lecturers": [
+        "Mara Chen, MSc",
+        "Julian Reyes"
+      ]
+    },
+    "sections": [
+      {
+        "id": 5101,
+        "name": "The Modern Interface Stack",
+        "time_start": "8:00 AM",
+        "time_end": "8:45 AM",
+        "moderator": {
+          "lecturers": [
+            "Mara Chen, MSc"
+          ]
+        },
+        "segments": [
+          {
+            "id": 6101,
+            "name": "Opening Remarks",
+            "time_start": "8:00 AM",
+            "time_end": "8:08 AM",
+            "moderator": {
+              "lecturers": [
+                "Mara Chen, MSc"
+              ]
+            }
+          },
+          {
+            "id": 6102,
+            "name": "What Corporate Front Ends Expect in 2026",
+            "time_start": "8:08 AM",
+            "time_end": "8:23 AM",
+            "moderator": {
+              "lecturers": [
+                "Elliot Park"
+              ]
+            }
+          },
+          {
+            "id": 6103,
+            "name": "Design Systems That Survive Product Growth",
+            "time_start": "8:23 AM",
+            "time_end": "8:38 AM",
+            "moderator": {
+              "lecturers": [
+                "Nadia Flores"
+              ]
+            }
+          },
+          {
+            "id": 6104,
+            "name": "Discussion",
+            "time_start": "8:38 AM",
+            "time_end": "8:45 AM",
+            "moderator": {
+              "lecturers": [
+                "Mara Chen, MSc",
+                "Julian Reyes"
+              ]
+            }
+          }
+        ],
+        "subsections": []
+      },
+      {
+        "id": 5102,
+        "name": "Platform Architecture",
+        "time_start": "9:00 AM",
+        "time_end": "10:00 AM",
+        "moderator": {
+          "lecturers": [
+            "Julian Reyes"
+          ]
+        },
+        "segments": [],
+        "subsections": [
+          {
+            "id": 5201,
+            "name": "Architecture Briefings",
+            "moderator": {
+              "lecturers": [
+                "Julian Reyes"
+              ]
+            },
+            "segments": [
+              {
+                "id": 6201,
+                "name": "Composable Front Ends Without Fragmented UX",
+                "time_start": "9:00 AM",
+                "time_end": "9:18 AM",
+                "moderator": {
+                  "lecturers": [
+                    "Avery Singh"
+                  ]
+                }
+              },
+              {
+                "id": 6202,
+                "name": "API Contracts as a Shared Product Surface",
+                "time_start": "9:18 AM",
+                "time_end": "9:36 AM",
+                "moderator": {
+                  "lecturers": [
+                    "Theo Mercer"
+                  ]
+                }
+              },
+              {
+                "id": 6203,
+                "name": "Panel: Where the Browser Ends and the Platform Begins",
+                "time_start": "9:36 AM",
+                "time_end": "10:00 AM",
+                "moderator": {
+                  "lecturers": [
+                    "Julian Reyes",
+                    "Avery Singh",
+                    "Theo Mercer"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4102,
+    "name": "Saturday, October 17",
+    "session_date": "2026-10-17",
+    "session_day": "Saturday",
+    "session_type_id": 14,
+    "session_type": "Workshop",
+    "session_category": "Hands-On Lab",
+    "session_category_id": 204,
+    "specialty_ids": [
+      3,
+      9
+    ],
+    "specialties": [
+      "Web Engineering",
+      "Accessibility"
+    ],
+    "location_id": 34,
+    "location": "Studio 2",
+    "venue": "North Harbor Conference Center",
+    "accreditation": "Workshop Credit",
+    "moderator": {
+      "lecturers": [
+        "Lena Brooks"
+      ]
+    },
+    "sections": [
+      {
+        "id": 5110,
+        "name": "Accessible Interfaces Under Real Constraints",
+        "time_start": "1:00 PM",
+        "time_end": "2:30 PM",
+        "moderator": {
+          "lecturers": [
+            "Lena Brooks"
+          ]
+        },
+        "segments": [
+          {
+            "id": 6110,
+            "name": "Keyboard Navigation Audit",
+            "time_start": "1:00 PM",
+            "time_end": "1:25 PM",
+            "moderator": {
+              "lecturers": [
+                "Lena Brooks"
+              ]
+            }
+          },
+          {
+            "id": 6111,
+            "name": "Screen Reader Flow Review",
+            "time_start": "1:25 PM",
+            "time_end": "1:55 PM",
+            "moderator": {
+              "lecturers": [
+                "Owen Hart"
+              ]
+            }
+          },
+          {
+            "id": 6112,
+            "name": "Repairing an Inaccessible Component",
+            "time_start": "1:55 PM",
+            "time_end": "2:30 PM",
+            "moderator": {
+              "lecturers": [
+                "Lena Brooks",
+                "Owen Hart"
+              ]
+            }
+          }
+        ],
+        "subsections": []
+      }
+    ]
+  },
+  {
+    "id": 4201,
+    "name": "Sunday, October 18",
+    "session_date": "2026-10-18",
+    "session_day": "Sunday",
+    "session_type_id": 12,
+    "session_type": "Main Program",
+    "session_category": "Data & Systems",
+    "session_category_id": 208,
+    "specialty_ids": [
+      4,
+      6
+    ],
+    "specialties": [
+      "Data Engineering",
+      "Cloud Systems"
+    ],
+    "location_id": 32,
+    "location": "Hall B",
+    "venue": "North Harbor Conference Center",
+    "accreditation": "Professional Development",
+    "moderator": {
+      "lecturers": [
+        "Priya Nordin, PhD"
+      ]
+    },
+    "sections": [
+      {
+        "id": 5200,
+        "name": "From Data Contract to Product Interface",
+        "time_start": "8:30 AM",
+        "time_end": "9:20 AM",
+        "moderator": {
+          "lecturers": [
+            "Priya Nordin, PhD"
+          ]
+        },
+        "segments": [
+          {
+            "id": 6200,
+            "name": "Designing Stable API Payloads",
+            "time_start": "8:30 AM",
+            "time_end": "8:47 AM",
+            "moderator": {
+              "lecturers": [
+                "Micah Torres"
+              ]
+            }
+          },
+          {
+            "id": 6205,
+            "name": "Schema Evolution Without Breaking Clients",
+            "time_start": "8:47 AM",
+            "time_end": "9:04 AM",
+            "moderator": {
+              "lecturers": [
+                "Samira Cole"
+              ]
+            }
+          },
+          {
+            "id": 6206,
+            "name": "Questions and Discussion",
+            "time_start": "9:04 AM",
+            "time_end": "9:20 AM",
+            "moderator": {
+              "lecturers": [
+                "Priya Nordin, PhD",
+                "Micah Torres",
+                "Samira Cole"
+              ]
+            }
+          }
+        ],
+        "subsections": []
+      }
+    ]
+  }
+]

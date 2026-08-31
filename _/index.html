@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Agenda</title>
+  <meta
+    name="description"
+    content="Static reference structure for the Modern Agenda Rosetta Stone."
+  >
+  <link rel="stylesheet" href="agenda.css">
+</head>
+
+<body>
+  <main class="page">
+    <section class="agenda stack" aria-labelledby="agenda-title">
+      <header class="agenda-header cluster">
+        <div class="stack stack--tight">
+          <p class="label">Conference Program</p>
+          <h1 id="agenda-title">Modern Agenda</h1>
+          <p class="meta">
+            North Harbor Conference Center · October 17–20, 2026
+          </p>
+        </div>
+
+        <p class="notice">Agenda is subject to change.</p>
+      </header>
+
+      <!--
+        The 2015 TCT project grouped the feed by session_date,
+        then rendered session_category > sections > segments/subsections.
+        <details> preserves the expandable-day behavior without JavaScript.
+      -->
+
+      <details class="panel glass agenda-day" open>
+        <summary class="day-heading cluster">
+          <span class="date">Saturday, October 17</span>
+          <span class="day-toggle" aria-hidden="true"></span>
+        </summary>
+
+        <div class="day-body stack">
+          <section class="session stack">
+            <header class="session-heading split">
+              <div class="stack stack--tight">
+                <p class="label">Main Program</p>
+                <h2>Opening Forum</h2>
+              </div>
+
+              <div class="session-place meta">
+                <span>Hall A</span>
+                <span>North Harbor Conference Center</span>
+              </div>
+            </header>
+
+            <div class="cluster">
+              <span class="tag">Web Engineering</span>
+              <span class="tag">Interface Systems</span>
+              <span class="tag tag--accent">Professional Development</span>
+            </div>
+
+            <p class="faculty">
+              <span class="faculty-label">Moderators</span>
+              Mara Chen, MSc · Julian Reyes
+            </p>
+
+            <article class="section stack stack--tight">
+              <header class="section-heading split">
+                <div>
+                  <p class="time">8:00 AM–8:45 AM</p>
+                  <h3>The Modern Interface Stack</h3>
+                </div>
+
+                <p class="faculty faculty--compact">
+                  <span class="faculty-label">Chair</span>
+                  Mara Chen, MSc
+                </p>
+              </header>
+
+              <div class="segment-list">
+                <div class="segment">
+                  <time class="segment-time">8:00 AM</time>
+                  <div class="segment-content">
+                    <h4>Opening Remarks</h4>
+                    <p class="faculty">Mara Chen, MSc</p>
+                  </div>
+                </div>
+
+                <div class="segment">
+                  <time class="segment-time">8:08 AM</time>
+                  <div class="segment-content">
+                    <h4>What Corporate Front Ends Expect in 2026</h4>
+                    <p class="faculty">Elliot Park</p>
+                  </div>
+                </div>
+
+                <div class="segment">
+                  <time class="segment-time">8:23 AM</time>
+                  <div class="segment-content">
+                    <h4>Design Systems That Survive Product Growth</h4>
+                    <p class="faculty">Nadia Flores</p>
+                  </div>
+                </div>
+
+                <div class="segment">
+                  <time class="segment-time">8:38 AM</time>
+                  <div class="segment-content">
+                    <h4>Discussion</h4>
+                    <p class="faculty">Mara Chen, MSc · Julian Reyes</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="section stack stack--tight">
+              <header class="section-heading split">
+                <div>
+                  <p class="time">9:00 AM–10:00 AM</p>
+                  <h3>Platform Architecture</h3>
+                </div>
+
+                <p class="faculty faculty--compact">
+                  <span class="faculty-label">Chair</span>
+                  Julian Reyes
+                </p>
+              </header>
+
+              <section class="subsection stack stack--tight">
+                <header class="subsection-heading">
+                  <p class="label">Subsection</p>
+                  <h4>Architecture Briefings</h4>
+                </header>
+
+                <div class="segment-list">
+                  <div class="segment">
+                    <time class="segment-time">9:00 AM</time>
+                    <div class="segment-content">
+                      <h4>Composable Front Ends Without Fragmented UX</h4>
+                      <p class="faculty">Avery Singh</p>
+                    </div>
+                  </div>
+
+                  <div class="segment">
+                    <time class="segment-time">9:18 AM</time>
+                    <div class="segment-content">
+                      <h4>API Contracts as a Shared Product Surface</h4>
+                      <p class="faculty">Theo Mercer</p>
+                    </div>
+                  </div>
+
+                  <div class="segment">
+                    <time class="segment-time">9:36 AM</time>
+                    <div class="segment-content">
+                      <h4>Panel: Where the Browser Ends and the Platform Begins</h4>
+                      <p class="faculty">Julian Reyes · Avery Singh · Theo Mercer</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </article>
+          </section>
+
+          <section class="session stack">
+            <header class="session-heading split">
+              <div class="stack stack--tight">
+                <p class="label">Workshop</p>
+                <h2>Hands-On Lab</h2>
+              </div>
+
+              <div class="session-place meta">
+                <span>Studio 2</span>
+                <span>North Harbor Conference Center</span>
+              </div>
+            </header>
+
+            <div class="cluster">
+              <span class="tag">Web Engineering</span>
+              <span class="tag">Accessibility</span>
+              <span class="tag tag--accent">Workshop Credit</span>
+            </div>
+
+            <article class="section stack stack--tight">
+              <header class="section-heading split">
+                <div>
+                  <p class="time">1:00 PM–2:30 PM</p>
+                  <h3>Accessible Interfaces Under Real Constraints</h3>
+                </div>
+
+                <p class="faculty faculty--compact">
+                  <span class="faculty-label">Chair</span>
+                  Lena Brooks
+                </p>
+              </header>
+
+              <div class="segment-list">
+                <div class="segment">
+                  <time class="segment-time">1:00 PM</time>
+                  <div class="segment-content">
+                    <h4>Keyboard Navigation Audit</h4>
+                    <p class="faculty">Lena Brooks</p>
+                  </div>
+                </div>
+
+                <div class="segment">
+                  <time class="segment-time">1:25 PM</time>
+                  <div class="segment-content">
+                    <h4>Screen Reader Flow Review</h4>
+                    <p class="faculty">Owen Hart</p>
+                  </div>
+                </div>
+
+                <div class="segment">
+                  <time class="segment-time">1:55 PM</time>
+                  <div class="segment-content">
+                    <h4>Repairing an Inaccessible Component</h4>
+                    <p class="faculty">Lena Brooks · Owen Hart</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </details>
+
+      <details class="panel glass agenda-day">
+        <summary class="day-heading cluster">
+          <span class="date">Sunday, October 18</span>
+          <span class="day-toggle" aria-hidden="true"></span>
+        </summary>
+
+        <div class="day-body stack">
+          <section class="session stack">
+            <header class="session-heading split">
+              <div class="stack stack--tight">
+                <p class="label">Main Program</p>
+                <h2>Data &amp; Systems</h2>
+              </div>
+
+              <div class="session-place meta">
+                <span>Hall B</span>
+                <span>North Harbor Conference Center</span>
+              </div>
+            </header>
+
+            <div class="cluster">
+              <span class="tag">Data Engineering</span>
+              <span class="tag">Cloud Systems</span>
+            </div>
+
+            <article class="section stack stack--tight">
+              <header class="section-heading split">
+                <div>
+                  <p class="time">8:30 AM–9:20 AM</p>
+                  <h3>From Data Contract to Product Interface</h3>
+                </div>
+
+                <p class="faculty faculty--compact">
+                  <span class="faculty-label">Chair</span>
+                  Priya Nordin, PhD
+                </p>
+              </header>
+
+              <div class="segment-list">
+                <div class="segment">
+                  <time class="segment-time">8:30 AM</time>
+                  <div class="segment-content">
+                    <h4>Designing Stable API Payloads</h4>
+                    <p class="faculty">Micah Torres</p>
+                  </div>
+                </div>
+
+                <div class="segment">
+                  <time class="segment-time">8:47 AM</time>
+                  <div class="segment-content">
+                    <h4>Schema Evolution Without Breaking Clients</h4>
+                    <p class="faculty">Samira Cole</p>
+                  </div>
+                </div>
+
+                <div class="segment">
+                  <time class="segment-time">9:04 AM</time>
+                  <div class="segment-content">
+                    <h4>Questions and Discussion</h4>
+                    <p class="faculty">Priya Nordin, PhD · Micah Torres · Samira Cole</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </details>
+
+      <p class="notice notice--footer">** Agenda is subject to change.</p>
+    </section>
+  </main>
+</body>
+</html>
