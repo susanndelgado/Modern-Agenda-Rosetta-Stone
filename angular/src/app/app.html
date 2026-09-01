@@ -1,0 +1,155 @@
+<main class="page">
+  <section class="agenda stack" aria-labelledby="agenda-title">
+
+    <header class="agenda-header cluster">
+      <div class="stack stack--tight">
+        <p class="label">Conference Program</p>
+        <h1 id="agenda-title">Modern Agenda</h1>
+        <p class="meta">
+          North Harbor Conference Center · October 17–20, 2026
+        </p>
+      </div>
+
+      <p class="notice">Agenda is subject to change.</p>
+    </header>
+
+    @for (day of agendaDays; track day.date; let first = $first) {
+
+      <details class="panel glass agenda-day" [open]="first">
+
+        <summary class="day-heading cluster">
+          <span class="date">{{ day.name }}</span>
+          <span class="day-toggle" aria-hidden="true"></span>
+        </summary>
+
+        <div class="day-body stack">
+
+          @for (session of day.sessions; track session.id) {
+
+            <section class="session stack">
+
+              <header class="session-heading split">
+                <div class="stack stack--tight">
+                  <p class="label">{{ session.session_type }}</p>
+                  <h2>{{ session.session_category }}</h2>
+                </div>
+
+                <div class="session-place meta">
+                  <span>{{ session.location }}</span>
+                  <span>{{ session.venue }}</span>
+                </div>
+              </header>
+
+              <div class="cluster">
+
+                @for (specialty of session.specialties; track specialty) {
+                  <span class="tag">{{ specialty }}</span>
+                }
+
+                <span class="tag tag--accent">
+                  {{ session.accreditation }}
+                </span>
+
+              </div>
+
+              <p class="faculty">
+                <span class="faculty-label">Moderators</span>
+                {{ session.moderator.lecturers.join(' · ') }}
+              </p>
+
+              @for (section of session.sections; track section.id) {
+
+                <article class="section stack stack--tight">
+
+                  <header class="section-heading split">
+                    <div>
+                      <p class="time">
+                        {{ section.time_start }}–{{ section.time_end }}
+                      </p>
+
+                      <h3>{{ section.name }}</h3>
+                    </div>
+
+                    <p class="faculty faculty--compact">
+                      <span class="faculty-label">Chair</span>
+                      {{ section.moderator.lecturers.join(' · ') }}
+                    </p>
+                  </header>
+
+                  <div class="segment-list">
+
+                    @for (segment of section.segments; track segment.id) {
+
+                      <div class="segment">
+                        <time class="segment-time">
+                          {{ segment.time_start }}
+                        </time>
+
+                        <div class="segment-content">
+                          <h4>{{ segment.name }}</h4>
+
+                          <p class="faculty">
+                            {{ segment.moderator.lecturers.join(' · ') }}
+                          </p>
+                        </div>
+                      </div>
+
+                    }
+
+                  </div>
+
+                  @for (subsection of section.subsections; track subsection.id) {
+
+                    <section class="subsection stack stack--tight">
+
+                      <header class="subsection-heading">
+                        <p class="label">Subsection</p>
+                        <h4>{{ subsection.name }}</h4>
+                      </header>
+
+                      <div class="segment-list">
+
+                        @for (segment of subsection.segments; track segment.id) {
+
+                          <div class="segment">
+                            <time class="segment-time">
+                              {{ segment.time_start }}
+                            </time>
+
+                            <div class="segment-content">
+                              <h4>{{ segment.name }}</h4>
+
+                              <p class="faculty">
+                                {{ segment.moderator.lecturers.join(' · ') }}
+                              </p>
+                            </div>
+                          </div>
+
+                        }
+
+                      </div>
+
+                    </section>
+
+                  }
+
+                </article>
+
+              }
+
+            </section>
+
+          }
+
+        </div>
+
+      </details>
+
+    }
+
+    <p class="notice notice--footer">
+      ** Agenda is subject to change.
+    </p>
+
+  </section>
+</main>
