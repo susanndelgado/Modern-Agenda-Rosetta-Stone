@@ -10,7 +10,7 @@ export class AgendaService {
   constructor(private http: HttpClient) {}
 
   getAgenda() {
-    return this.http.get<AgendaSession[]>('/data/agenda-data.json');
-  }
+    return this.http.get<AgendaSession[]>('data/agenda-data.json');  
+    }
 
 }
