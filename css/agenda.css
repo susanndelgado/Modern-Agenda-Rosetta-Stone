@@ -60,8 +60,8 @@ body {
   min-height: 100vh;
 
   color: var(--text);
-  background: var(--page-bg);
-  background: linear-gradient(rgba(2, 7, 18, 0.04), rgba(2, 7, 18, 0.08)), url(/img/bg.png) center center / cover no-repeat;
+  background-color: #07112a;
+  background: linear-gradient(rgba(2, 7, 18, 0.04), rgba(2, 7, 18, 0.08)), url("img/bg.png") center center / cover no-repeat;
 }
 
 h1,
