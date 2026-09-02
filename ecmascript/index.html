@@ -2,81 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Modern Agenda — ECMAScript</title>
-
   <meta
     name="description"
     content="ECMAScript implementation of the Modern Agenda Rosetta Stone."
   >
-
+  <link rel="stylesheet" href="https://susanndelgado.github.io/Rosetta-Stone/rosetta-docs.css">
   <link rel="stylesheet" href="../css/agenda.css">
-  <link rel="stylesheet" href="../css/navigation.css">
 </head>
 
 <body>
-
   <main class="page">
-
-    <section
-      class="agenda stack"
-      aria-labelledby="agenda-title"
-    >
-
-      <header class="agenda-header cluster">
-
+    <section class="agenda stack" aria-labelledby="agenda-title">
+      <header class="site-header cluster">
         <div class="stack stack--tight">
-          <p class="label">
-            Modern Agenda · Rosetta Stone
-          </p>
-
-          <h1 id="agenda-title">
-            ECMAScript
-          </h1>
-
-          <p class="meta">
-            Agenda generated with modern ECMAScript.
-          </p>
+          <p class="label">Modern Agenda · Rosetta Stone</p>
+          <h1 class="title-xl" id="agenda-title">ECMAScript</h1>
+          <p class="meta">Agenda generated with modern ECMAScript.</p>
         </div>
 
-        <nav class="site-nav" aria-label="Project navigation">
-          <a class="nav-link" href="https://susanndelgado.github.io/Modern-Agenda-Rosetta-Stone/">Return to Index</a>
-          <a class="nav-link" href="https://susanndelgado.github.io/Rosetta-Stone/">Return to Rosetta Stone</a>
-          <a class="nav-link" href="https://sandbox.sdelgado.com/">Return to Sandbox</a>
+        <nav class="site-nav" aria-label="System links">
+          <a class="nav-link" href="https://susanndelgado.github.io/Modern-Agenda-Rosetta-Stone/">Return to Modern Agenda</a>
+          <a class="nav-link" href="https://susanndelgado.github.io/Rosetta-Stone/">Rosetta Stone System</a>
+          <a class="nav-link" href="https://sdelgado.com/">Portfolio</a>
+          <a class="nav-link" href="https://sandbox.sdelgado.com/">Developer Sandbox</a>
         </nav>
-
       </header>
 
-
-      <!--
-        ECMAScript will generate the agenda
-        and place it inside this container.
-      -->
-
-      <div
-        id="agenda"
-        class="stack"
-      ></div>
-
+      <div id="agenda" class="stack"></div>
 
       <p class="notice notice--footer">
         Agenda content is generated from JavaScript data.
       </p>
-
     </section>
-
   </main>
 
-
-  <script
-    type="module"
-    src="agenda.js"
-  ></script>
-
+  <script type="module" src="agenda.js"></script>
 </body>
 </html>
