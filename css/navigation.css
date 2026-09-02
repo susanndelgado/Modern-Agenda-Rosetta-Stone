@@ -1,0 +1,33 @@
+/* ==========================================================
+   SHARED PROJECT NAVIGATION
+   Global, low-specificity classes.
+   ========================================================== */
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.65rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid rgba(138, 103, 255, 0.46);
+  border-radius: 999px;
+  color: #d8ceff;
+  background: var(--panel-light);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  border-color: var(--blue);
+  color: var(--text);
+}
