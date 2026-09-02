@@ -88,6 +88,11 @@ function lecturers(array $moderator): string
         href="../css/agenda.css"
     >
 
+    <link
+        rel="stylesheet"
+        href="../css/navigation.css"
+    >
+
 </head>
 
 
@@ -123,12 +128,11 @@ function lecturers(array $moderator): string
                 Agenda is subject to change.
             </p>
 
-            <a
-                class="tag tag--accent"
-                href="https://susanndelgado.github.io/Modern-Agenda-Rosetta-Stone/"
-            >
-                Rosetta Stone Home
-            </a>
+            <nav class="site-nav" aria-label="Project navigation">
+                <a class="nav-link" href="https://susanndelgado.github.io/Modern-Agenda-Rosetta-Stone/">Return to Index</a>
+                <a class="nav-link" href="https://susanndelgado.github.io/Rosetta-Stone/">Return to Rosetta Stone</a>
+                <a class="nav-link" href="https://sandbox.sdelgado.com/">Return to Sandbox</a>
+            </nav>
 
         </header>
 
