@@ -123,6 +123,13 @@ function lecturers(array $moderator): string
                 Agenda is subject to change.
             </p>
 
+            <a
+                class="tag tag--accent"
+                href="https://susanndelgado.github.io/Modern-Agenda-Rosetta-Stone/"
+            >
+                Rosetta Stone Home
+            </a>
+
         </header>
 
 
