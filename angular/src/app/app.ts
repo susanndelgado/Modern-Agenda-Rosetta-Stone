@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  OnInit
+} from '@angular/core';
 
 import { AgendaDay, AgendaSession } from './agenda.model';
 import { AgendaService } from './agenda.service';
@@ -13,7 +17,10 @@ export class App implements OnInit {
   agendaSessions: AgendaSession[] = [];
   agendaDays: AgendaDay[] = [];
 
-  constructor(private agendaService: AgendaService) {}
+  constructor(
+    private agendaService: AgendaService,
+    private changeDetector: ChangeDetectorRef
+  ) {}
 
   ngOnInit() {
     this.loadAgenda();
@@ -53,6 +60,8 @@ export class App implements OnInit {
         }, []);
 
         this.agendaDays = grouped;
+
+        this.changeDetector.markForCheck();
 
       });
 
