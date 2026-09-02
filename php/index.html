@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Agenda — PHP Source</title>
+  <meta
+    name="description"
+    content="PHP source code for the Modern Agenda Rosetta Stone implementation."
+  >
+  <link rel="stylesheet" href="https://susanndelgado.github.io/Rosetta-Stone/rosetta-docs.css">
+  <link rel="stylesheet" href="../css/agenda.css">
+</head>
+
+<body>
+  <main class="page">
+    <section class="agenda stack" aria-labelledby="page-title">
+      <header class="site-header cluster">
+        <div class="stack stack--tight">
+          <p class="label">Modern Agenda · Rosetta Stone</p>
+          <h1 class="title-xl" id="page-title">PHP Source</h1>
+          <p class="meta">
+            Static code view of the PHP implementation used by Modern Agenda.
+          </p>
+        </div>
+
+        <nav class="site-nav" aria-label="System links">
+          <a class="nav-link" href="https://susanndelgado.github.io/Modern-Agenda-Rosetta-Stone/">Return to Modern Agenda</a>
+          <a class="nav-link" href="https://susanndelgado.github.io/Rosetta-Stone/">Rosetta Stone System</a>
+          <a class="nav-link" href="https://sdelgado.com/">Portfolio</a>
+          <a class="nav-link" href="https://sandbox.sdelgado.com/">Developer Sandbox</a>
+        </nav>
+      </header>
+
+      <article class="panel glass section stack">
+        <header class="section-heading stack stack--tight">
+          <p class="label">PHP</p>
+          <h2 class="title-md">phpAgenda.php</h2>
+          <p class="meta">
+            GitHub Pages cannot execute PHP, so this page displays the exact source directly.
+          </p>
+        </header>
+
+        <pre class="panel glass"><code id="php-source">Loading PHP source…</code></pre>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    fetch('phpAgenda.php')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Could not load PHP source.');
+        }
+        return response.text();
+      })
+      .then((source) => {
+        document.getElementById('php-source').textContent = source;
+      })
+      .catch(() => {
+        document.getElementById('php-source').textContent = 'Could not load PHP source.';
+      });
+  </script>
+</body>
+</html>
