@@ -199,6 +199,14 @@ summary:focus-visible {
   line-height: 1.4;
 }
 
+:where(.segment-content) .tag[href="#"] {
+  border-color: var(--border);
+  color: var(--muted-light);
+  background: var(--surface-soft);
+  cursor: default;
+  pointer-events: none;
+}
+
 @media (max-width: 680px) {
   .agenda-header {
     align-items: flex-start;
