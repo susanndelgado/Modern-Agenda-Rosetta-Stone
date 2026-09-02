@@ -59,7 +59,8 @@ summary:focus-visible {
   padding: 1rem 1.25rem;
   list-style: none;
   border-bottom: 1px solid transparent;
-  background: var(--surface-blue);
+  background: #ff6c80;
+  /* #f9b23d */
 }
 
 .day-heading::-webkit-details-marker {
